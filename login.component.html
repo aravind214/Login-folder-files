@@ -1,0 +1,93 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+       
+        <img class="imgProfil" src="http://maxpixel.freegreatpicture.com/static/photo/1x/Redhead-Girl-Person-People-Woman-Female-Avatar-995164.png" alt="" class="circle" height="40px" width="50px">
+    </a>
+      <form action="" method="post" >
+        <div class="input-field" style="margin-left: 0px; width: 500px;">
+            <input id="search" type="search" name="search">
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+        </div>
+    </form>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="login.html" class="btn-flat disabled">Login</a></li>
+        <li><a href="http://localhost:4200/signup" >Register</a></li>
+        <li><a href="cart.html">Notifications <span class="nav-badge"><span class="new badge">2</span></span></a></li>
+        
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="login.html" class="btn-flat disabled">Login</a></li>
+        <li><a href="http://localhost:4200/signup" >Register</a></li>
+        <li><a href="mobile.html">Cart<span class="badge new nav-badge">1</span></a></li>
+    </ul>
+  </div>
+  </nav><br>
+<body class="cyan center-align" style="margin-right: 20%;float: right; width: 700px;">
+    
+    <div class="sm-jumbotron centrer-align">
+        <h2>User Login</h2>
+    </div>
+    <!-- Form Section -->
+
+  <form action="" method="GET" #form="ngForm" (ngSubmit)="onSubmit(form.value)" > <!-- Change The Form Method From Here-->
+<div class="card-panel z-depth-5" >
+
+    <!-- Form Logo Section  -->
+
+    <div class="row margin">
+        <div class="col s12 m12 l12 center">
+            <img src="https://i.imgur.com/ypAbAYt.png"
+             alt="" class="responsive-img circle" style="width:100px;">
+            <p>Movie Review Login Page </p>
+        </div>
+    </div>
+
+    <!-- Form Username Input Section -->
+
+    <div class="col s12 m12 l12">
+        <div class="input-field">
+            <i class="material-icons prefix">person</i>
+            <input type="text" name="username" id="username" required [(ngModel)]="loginmember.UserName">
+            <label for="UserName">UserName</label>
+        </div>
+    </div>
+
+    <!-- Form Password Input Section -->
+
+    <div class="col m12 l12">
+        <div class="input-field">
+            <i class="material-icons prefix">lock</i>
+            <input type="password" name="password" id="password" required minlength="5" [(ngModel)]="loginmember.Password">
+            <label for="Password">Password</label>
+        </div>
+    </div>
+
+        <!-- Form Chekbox (Remember Me) Input Section -->
+
+    <div class="left">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Remember Me</label>
+    </div>
+    <br><br>
+
+        <!-- Form Button Section  -->
+
+    <div class="center">
+        <input type="submit" value="Login" name="login" 
+        class="btn waves-effect waves-light " 
+        style="width:100%; background-color: #ff4081;">
+    </div>
+
+        <!-- Form "Register Now" And "Forgot Password" Link Section. -->
+
+    <div class="" style="font-size:14px;"><br>
+        <a href="" class="left" (click)="Register()">Register Now!</a>
+        <a href="" class="right ">Forgot Password?</a>
+    </div><br>
+</div>
+</form>
+
+</body>
